@@ -6,11 +6,13 @@ suppressPackageStartupMessages({
     library(targets)
     library(tarchetypes)
     library(tidyverse)
+    library(epl) ## install once `pak::pak("jemarnold/epl")`
+    library(writexl)
 })
 
 # Set target options:
 tar_option_set(
-    packages = c("tidyverse", "epl")
+    packages = c("tidyverse", "epl", "writexl")
     # Set other options as needed.
 )
 
